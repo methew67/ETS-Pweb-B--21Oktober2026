@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LibraryReg - Perpustakaan Universitas | Beranda</title>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       NAVBAR
+       ======================================================================== -->
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <div class="brand-logo-icon">
+          <i class="bi bi-book-half"></i>
+        </div>
+        <div>
+          <div class="brand-text-title">LibraryReg</div>
+          <div class="brand-text-sub">Perpustakaan Universitas</div>
+        </div>
+      </a>
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tentang">Tentang</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#layanan">Layanan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pendaftaran.html">Pendaftaran</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data-anggota.html">Data Anggota</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center gap-2">
+          <button type="button" class="btn btn-primary-custom px-4" data-bs-toggle="modal" data-bs-target="#loginModal">
+            <i class="bi bi-box-arrow-in-right me-1"></i> Login
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================================================
+       HERO SECTION
+       ======================================================================== -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-6">
+          <div class="hero-badge">
+            <i class="bi bi-stars me-1"></i> GERBANG ILMU MENUJU MASA DEPAN
+          </div>
+          <h1 class="hero-title mb-3">Selamat Datang di Perpustakaan Universitas</h1>
+          <p class="hero-subtitle mb-4">
+            Akses ribuan koleksi buku, jurnal, e-book, dan sumber referensi untuk mendukung proses belajar, penelitian, dan pengembangan diri.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="pendaftaran.html" class="btn btn-primary-custom btn-lg">
+              <i class="bi bi-person-plus-fill me-2"></i> Daftar Anggota
+            </a>
+            <a href="#layanan" class="btn btn-outline-custom btn-lg">
+              <i class="bi bi-book me-2"></i> Lihat Koleksi
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="hero-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=1000&q=80" alt="Ruang Perpustakaan Universitas" class="hero-image">
+            <div class="hero-image-overlay-quote shadow">
+              <i class="bi bi-quote fs-4 text-warning"></i> Read &bull; Learn &bull; Grow Together
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       4 KEUNGGULAN UTAMA (CARDS)
+       ======================================================================== -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Fitur 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <i class="bi bi-journal-bookmark-fill"></i>
+            </div>
+            <h5>Koleksi Lengkap</h5>
+            <p>Lebih dari 50.000 koleksi buku, jurnal ilmiah, dan e-book berkualitas.</p>
+          </div>
+        </div>
+        <!-- Fitur 2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <i class="bi bi-people-fill"></i>
+            </div>
+            <h5>Akses untuk Semua</h5>
+            <p>Mahasiswa, dosen, dan tenaga kependidikan terfasilitasi secara inklusif.</p>
+          </div>
+        </div>
+        <!-- Fitur 3 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <i class="bi bi-laptop"></i>
+            </div>
+            <h5>Layanan Digital</h5>
+            <p>Akses katalog online (OPAC), e-resources, dan repositori kampus 24/7.</p>
+          </div>
+        </div>
+        <!-- Fitur 4 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <i class="bi bi-cup-hot-fill"></i>
+            </div>
+            <h5>Ruang Nyaman</h5>
+            <p>Fasilitas belajar individu, ruang diskusi kelompok, dan wifi super cepat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       STATISTIK ILUSTRATIF
+       ======================================================================== -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <div class="stat-number">50.000+</div>
+            <div class="stat-label">Koleksi Buku Fisik & Digital</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <div class="stat-number" id="statsTotalAnggota">10.000+</div>
+            <div class="stat-label">Anggota Perpustakaan Aktif</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <div class="stat-number">250+</div>
+            <div class="stat-label">Jurnal Internasional Terindeks</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Layanan Digital Terintegrasi</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       TENTANG PERPUSTAKAAN
+       ======================================================================== -->
+  <section id="tentang" class="py-5">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-6">
+          <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=800&q=80" alt="Gedung Perpustakaan" class="img-fluid rounded-4 shadow">
+        </div>
+        <div class="col-lg-6 ps-lg-5">
+          <span class="badge bg-primary-subtle text-primary fw-bold mb-2 px-3 py-2">TENTANG KAMI</span>
+          <h2 class="fw-bold mb-3">Mendukung Tri Dharma Perguruan Tinggi</h2>
+          <p class="text-secondary mb-3">
+            Perpustakaan Universitas berkomitmen menjadi pusat gravitasi literasi dan riset akademik. Kami bertransformasi dari sistem manual kertas ke sistem terpadu digital melalui <strong>LibraryReg</strong>, mempermudah pendaftaran anggota, penerbitan kartu digital, dan sirkulasi koleksi tanpa antrean panjang.
+          </p>
+          <ul class="list-unstyled text-secondary">
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Pengelolaan anggota terdata cepat & transparan</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Kartu anggota digital otomatis terbit setelah verifikasi</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Akses tanpa batas ke repositori skripsi, tesis, dan riset dosen</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       LAYANAN PERPUSTAKAAN
+       ======================================================================== -->
+  <section id="layanan" class="py-5 bg-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="badge bg-primary-subtle text-primary fw-bold mb-2 px-3 py-2">LAYANAN UNGGULAN</span>
+        <h2 class="fw-bold">Layanan untuk Seluruh Sivitas Akademika</h2>
+        <p class="text-secondary mx-auto" style="max-width: 600px;">
+          Berbagai fasilitas modern disiapkan untuk menunjang kenyamanan dan produktivitas akademik Anda.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm p-3 rounded-4">
+            <div class="card-body">
+              <div class="text-primary fs-1 mb-3"><i class="bi bi-arrow-left-right"></i></div>
+              <h5 class="fw-bold">Sirkulasi & Peminjaman</h5>
+              <p class="text-secondary small">Pinjam hingga 5 buku sekaligus dengan masa peminjaman fleksibel dan kemudahan perpanjangan secara online.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm p-3 rounded-4">
+            <div class="card-body">
+              <div class="text-primary fs-1 mb-3"><i class="bi bi-journal-richtext"></i></div>
+              <h5 class="fw-bold">E-Resources & Journal Hub</h5>
+              <p class="text-secondary small">Langganan basis data bereputasi internasional (Scopus, IEEE, Springer, JSTOR) yang dapat diakses dari jaringan kampus.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm p-3 rounded-4">
+            <div class="card-body">
+              <div class="text-primary fs-1 mb-3"><i class="bi bi-mortarboard-fill"></i></div>
+              <h5 class="fw-bold">Bimbingan Literasi & Riset</h5>
+              <p class="text-secondary small">Workshop literasi informasi, pelatihan manajemen referensi (Mendeley/Zotero), dan konsultasi cek plagiarisme.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Box -->
+      <div class="p-5 mt-5 rounded-4 text-white text-center" style="background: linear-gradient(135deg, #2563eb, #1e40af);">
+        <h3 class="fw-bold mb-2">Belum Terdaftar Sebagai Anggota?</h3>
+        <p class="opacity-90 mb-4">Daftar sekarang secara mandiri secara digital tanpa perlu mengisi kertas manual dan antre di loket!</p>
+        <a href="pendaftaran.html" class="btn btn-light btn-lg px-4 text-primary fw-bold shadow-sm">
+          <i class="bi bi-pencil-square me-2"></i> Formulir Pendaftaran Online
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="brand-logo-icon bg-primary text-white">
+              <i class="bi bi-book-half"></i>
+            </div>
+            <div>
+              <div class="brand-text-title text-white">LibraryReg</div>
+              <div class="brand-text-sub text-white-50">Perpustakaan Universitas</div>
+            </div>
+          </div>
+          <p class="small text-secondary">
+            Sistem pendaftaran dan manajemen data anggota perpustakaan kampus berbasis web modern, responsif, dan terpadu.
+          </p>
+        </div>
+
+        <div class="col-lg-3 col-6">
+          <h5>Tautan Cepat</h5>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="index.html">Beranda</a></li>
+            <li class="mb-2"><a href="#tentang">Tentang Perpustakaan</a></li>
+            <li class="mb-2"><a href="#layanan">Layanan & Fasilitas</a></li>
+            <li class="mb-2"><a href="pendaftaran.html">Pendaftaran Anggota</a></li>
+            <li class="mb-2"><a href="data-anggota.html">Data Anggota</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6">
+          <h5>Jam Layanan</h5>
+          <ul class="list-unstyled small text-secondary">
+            <li class="mb-2"><strong class="text-white">Senin - Kamis:</strong><br>08.00 - 18.00 WIB</li>
+            <li class="mb-2"><strong class="text-white">Jumat:</strong><br>08.00 - 16.30 WIB</li>
+            <li class="mb-2"><strong class="text-white">Sabtu:</strong><br>09.00 - 14.00 WIB</li>
+            <li><strong class="text-white">Minggu / Libur:</strong> Tutup</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h5>Kontak & Lokasi</h5>
+          <ul class="list-unstyled small text-secondary">
+            <li class="mb-2"><i class="bi bi-geo-alt-fill text-primary me-2"></i> Gedung Perpustakaan Pusat Lt. 1-3, Kampus Terpadu</li>
+            <li class="mb-2"><i class="bi bi-envelope-fill text-primary me-2"></i> perpustakaan@univ.ac.id</li>
+            <li class="mb-2"><i class="bi bi-telephone-fill text-primary me-2"></i> (0274) 555-1234</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p class="mb-md-0">&copy; 2026 LibraryReg - Perpustakaan Universitas. Hak Cipta Dilindungi.</p>
+        <div class="d-flex gap-3">
+          <a href="#"><i class="bi bi-facebook fs-5"></i></a>
+          <a href="#"><i class="bi bi-instagram fs-5"></i></a>
+          <a href="#"><i class="bi bi-youtube fs-5"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       MODAL: LOGIN PETUGAS (SIMULASI)
+       ======================================================================== -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 shadow-lg" style="border-radius: 16px;">
+        <div class="modal-header border-0 pb-0">
+          <h5 class="modal-title fw-bold" id="loginModalLabel">
+            <i class="bi bi-shield-lock-fill text-primary me-2"></i> Login Petugas Perpustakaan
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <p class="text-secondary small mb-3">
+            Masuk untuk mengakses halaman kelola data anggota perpustakaan.
+          </p>
+          <div class="alert alert-light border small d-flex justify-content-between align-items-center py-2 mb-3">
+            <span>Demo Akun: <code>petugas_perpus</code> / <code>***</code></span>
+            <button type="button" class="btn btn-xs btn-outline-primary py-0 px-2" id="btnFillDemoLogin" style="font-size: 0.75rem;">
+              Isi Otomatis
+            </button>
+          </div>
+          <form id="officerLoginForm">
+            <div class="mb-3">
+              <label for="loginUsername" class="form-label">Username / NIP Petugas</label>
+              <div class="input-group">
+                <span class="input-group-text bg-white"><i class="bi bi-person"></i></span>
+                <input type="text" class="form-control" id="loginUsername" placeholder="Masukkan username" required>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="loginPassword" class="form-label">Password</label>
+              <div class="input-group">
+                <span class="input-group-text bg-white"><i class="bi bi-key"></i></span>
+                <input type="password" class="form-control" id="loginPassword" placeholder="Masukkan password" required>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-3 small">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="rememberMe">
+                <label class="form-check-label text-secondary" for="rememberMe">Ingat saya</label>
+              </div>
+              <a href="#" class="text-decoration-none text-primary">Lupa password?</a>
+            </div>
+            <button type="submit" class="btn btn-primary-custom w-100 py-2">
+              <i class="bi bi-box-arrow-in-right me-1"></i> Masuk Sistem Petugas
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Data & Logic JS -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
